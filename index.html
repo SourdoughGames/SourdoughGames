@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html class="w3-light-gray">   <!-- make the whole page gray -->
+<head>
+    <title>Sourdough Games</title>  <!-- logo on tabs -->
+    <link rel="icon" href="images/Index.png">
+
+    <!-- meta: what encoding this page is written in -->
+    <meta charset="UTF-8">
+
+    <!-- This means that the browser will (probably) render the width of the page at 
+        the width of its own screen. So if that screen is 320px wide, the browser 
+        window will be 320px wide, rather than way zoomed out and showing 960px 
+        (or whatever that device does by default, in lieu of a responsive meta tag).
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- separate style sheet, my own -->
+    <link rel="stylesheet" type="text/css" href="myTheme.css" />
+
+    <!-- add google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet" type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
+    <!-- page specific styles -->
+</head>
+
+<body >  <!-- the texts -->
+<!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-animate-left" style="display:none;z-index:5" id="mySidebar">
+<button class="w3-bar-item w3-button w3-text-grey" onclick="w3_close()">   <!-- when this button is clicked again, it will close the side bar & close the overlay -->
+    <!-- to close the side bar -->
+    <i class="fa fa-close"></i>
+    Close
+</button>
+<a href="index.html" class="w3-bar-item w3-button myButton">
+    <i class="fa fa-home"></i>
+    Home
+</a>
+<!-- TODO: add more pages here -->
+     
+<div class="w3-panel w3-xlarge" style="text-align:center">
+    <a href="https://www.instagram.com/sourdoughchicken/" target="_blank" title="Instagram">
+        <i class="fa fa-instagram w3-hover-opacity"></i></a>
+
+    <a href="https://www.youtube.com/@SourdoughChicken" target="_blank" title="YouTube">
+        <i class="fa fa-youtube-play w3-hover-opacity"></i></a>
+    <!-- TODO: add more social media icons here -->
+
+</div>
+</div><!-- End sidebar -->
+
+
+<!-- making things opaque -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+
+
+
+
+
+<!-- Page Content -->
+<div>
+    <button class="myHamButton w3-button w3-xxlarge" onclick="w3_open()"><i class="fa fa-bars"></i></button>  <!-- hambergur button on top -->
+
+    <div class="w3-padding-large" id="main">
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-light-gray" id="home">
+            <!-- rounded image: the original image must be square -->
+            <img src="images/Index.png" class="w3-circle" style="width:50%">
+            <h2 id = "paragraphText" style="margin-top: 60px">Chicken in the Kitchen, our debut boardgame coming up soon! 
+                <br>Email us at <i>SourdoughGamesLLC@gmail.com</i> to join our mailing list.</h2>
+            <hr>
+        </header>
+    </div>
+</div>    
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="w3-content w3-text-grey w3-xxlarge" style="text-align:center">
+    <a href="https://www.instagram.com/sourdoughchicken/" target="_blank" title="Instagram">
+        <i class="fa fa-instagram w3-hover-opacity"></i></a>
+
+    <a href="https://www.youtube.com/@SourdoughChicken" target="_blank" title="YouTube">
+        <i class="fa fa-youtube-play w3-hover-opacity"></i></a>
+
+    <!-- TODO: add more social media icons -->
+
+</footer> <!-- End footer -->
+<!-- END PAGE CONTENT -->
+
+
+<script>
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+</script>
+
+</body>
+</html>

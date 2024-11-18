@@ -1,0 +1,151 @@
+/*
+https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics
+*/
+
+/*
+google "color #000000" for color block
+*/
+
+/* Element Selector: most general, select the tag */
+html {  /*<html> is the parent element of the whole page*/
+}
+
+img {
+  display: block;   /* so that images are not inline elements anymore */
+  margin: 10px auto;
+}
+
+body, h1,h2,h3,h4,h5,h6,p {
+  font-family: 'Quattrocento', serif;
+}
+
+hr {
+  background-color: black;
+  color: black;
+  border-width: 5px;
+  box-shadow:2px;
+}
+
+kbd {
+  border-radius: 3px;
+  border: 1px solid #b4b4b4;
+  color: #333;
+  display: inline-block;
+  margin-left: 2px;
+  line-height: 1;
+  padding: 2px 2px;
+  white-space: nowrap;
+ }
+
+code {
+  background-color: rgb(206, 206, 206);
+  border-radius: 3px;
+  font-family: courier, monospace;
+  padding: 0 3px;
+}
+
+samp {
+  font-weight: bold;
+  background-color: rgb(204, 228, 230);
+}
+
+/* ID Selector: the tag with the id, only one id inside a <> */
+#idBox {
+  font-family: 'Gaegu', cursive;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+
+  /* box model */
+  width: 500px;
+  height: 50px;
+  padding: 5px auto 5px auto;   /*up  right  bottom  left*/
+  background-color: #eeeff2;
+  border: 1px solid #687291;
+  margin: 5px 5px;   /* T&B  L&R */
+}
+
+#idTitle {
+  font-family: 'Quattrocento', serif;
+  font-size: 30px;
+  color:black;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#paragraphText {
+  font-family: 'Quattrocento', serif;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#paragraphTitle {
+  font-family: 'Quattrocento', serif;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#boxedCode {
+  background-color: rgba(218, 218, 218, 0.253);
+  border-radius: 3px;
+  font-family: courier, monospace;
+  padding: 10 3px;
+  border: 1px solid #b4b4b4;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+
+/* Class Selector: the tag with the class */
+.w3-sidebar{
+  background:lightgray;
+}
+
+.myButton {   /*the HOME, about and stuff*/
+  font-family: 'Quattrocento', serif;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  color: rgb(54, 54, 54);
+  background-color: transparent;
+}
+
+.myHamButton {
+  z-index: 1;
+  position: fixed;
+  background-color: transparent;
+}
+
+
+/* Attribute Selector: only when a <element> has an attribute  <element attribute=""> */
+img[src] {
+  height: 50%;
+  width: 50%;
+}
+
+
+
+/* Pseudo-Class Selector: select the tag only when it is in a specified state */
+a:hover {
+  background-color:transparent;  /* the background color of the text that is inside the "a" tag changes */
+}
+
+
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {
+  #main {margin-left: 0}
+  #idBox {font-size: 20px;}
+}
