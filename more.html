@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html class="w3-light-gray">
+<head>
+    <title>Chicken in the Kitchen</title>  <!-- logo on tabs -->
+    <link rel="icon" href="images/Index.png">
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.1/css/all.css">
+
+    <link rel="stylesheet" type="text/css" href="myTheme.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet" type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
+</head>
+
+<body >  <!-- the texts -->
+<!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-animate-left" style="display:none;z-index:5" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-text-grey" onclick="w3_close()">   <!-- when this button is clicked again, it will close the side bar & close the overlay -->
+        <!-- to close the side bar -->
+        <i class="fas fa-times"></i>
+        Close
+    </button>
+    <a href="index.html" class="w3-bar-item w3-button myButton">
+        <i class="fas fa-home"></i>
+        Home
+    </a>
+    <a href="products.html" class="w3-bar-item w3-button myButton">
+        <i class="fas fa-egg"></i>
+        Products
+    </a>
+    <a href="news.html" class="w3-bar-item w3-button myButton">
+        <i class="fa-regular fa-newspaper"></i>
+        News
+    </a>
+    <a href="more.html" class="w3-bar-item w3-button myButton">
+        <i class="fa-solid fa-mug-hot"></i>
+        More
+    </a>
+    
+    <!-- TODO: add more pages here -->
+         
+    <div class="w3-panel w3-xlarge" style="text-align:center">
+        <a href="https://www.instagram.com/sourdoughchicken/" target="_blank" title="Instagram">
+            <i class="fab fa-instagram w3-hover-opacity"></i></a>
+    
+        <a href="https://www.youtube.com/@SourdoughChicken" target="_blank" title="YouTube">
+            <i class="fab fa-youtube w3-hover-opacity"></i></a>
+    
+        <a href="https://www.tiktok.com/@sourdoughgames" target="_blank" title="Tiktok">
+            <i class="fab fa-tiktok w3-hover-opacity"></i></a>
+    
+        <a href="https://kickstarter.com/profile/sourdoughgames" target="_blank" title="Kickstarter">
+            <i class="fa-brands fa-kickstarter-k w3-hover-opacity"></i></a>
+    
+        <!-- TODO: add more social media icons here  -->
+    
+    </div>
+</div><!-- End sidebar -->
+
+<!-- making things opaque -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+
+
+
+
+
+
+<!-- Page Content -->
+<div>
+    <button class="myHamButton w3-button w3-xxlarge" onclick="w3_open()"><i class="fa fa-bars"></i></button>  <!-- hambergur button on top -->
+
+    <div class="w3-padding-large" id="main">
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-light-gray" id="home">
+            <img src="images/Index.png" class="w3-circle" style="width:25%">
+            <hr>
+            <h1 id = "idTitle">More</h1>
+            <hr>
+        </header>
+
+        <div class="content">
+        <h2>About Us</h2>
+        <p>Hello! 
+        <br>
+        <br>
+        My wife and I are the duo that make up Sourdough Games. We both love to make music and draw funny characters. I play a lot of video games and Rebecca does amazing crotchet. We are dedicated to family and creating a fun environment, and we hope our new board game fosters those spirits.
+        <br>
+        <br>
+        Thank you for stopping by,
+        <br>
+        Tyler and Rebecca Stalbaum</p>
+        <hr>
+
+        <h2>Contact Info</h2>
+        <p>SourdoughGamesLLC@gmail.com</p>
+        <hr>
+
+        <h2>Legal Info</h2>
+        <p>
+        Chicken in the Kitchen<sup>TM</sup>, and all intellectual property, as well as
+        any information and materials that appear on the Sourdough Games website
+        belong to Sourdough Games LLC, unless otherwise specified. Use of any of
+        the intellectual property materials on the Sourdough Games website is prohibited.
+        Chicken in the Kitchen<sup>TM</sup> is published by Sourdough Games LLC. &copy; 2024. All rights reserved.
+        </p>
+        <hr>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="w3-content w3-text-grey w3-xxlarge" style="text-align:center">
+    <a href="https://www.instagram.com/sourdoughchicken/" target="_blank" title="Instagram">
+        <i class="fab fa-instagram w3-hover-opacity"></i></a>
+
+    <a href="https://www.youtube.com/@SourdoughChicken" target="_blank" title="YouTube">
+        <i class="fab fa-youtube w3-hover-opacity"></i></a>
+
+    <a href="https://www.tiktok.com/@sourdoughgames" target="_blank" title="Tiktok">
+        <i class="fab fa-tiktok w3-hover-opacity"></i></a>
+
+    <a href="https://kickstarter.com/profile/sourdoughgames" target="_blank" title="Kickstarter">
+        <i class="fa-brands fa-kickstarter-k w3-hover-opacity"></i></a>
+    <!-- TODO: add more social media icons -->
+
+</footer> <!-- End footer -->
+<!-- END PAGE CONTENT -->
+
+
+<script>
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+</script>
+
+</body>
+</html>
